@@ -1,0 +1,108 @@
+/* ClothsApp.css */
+
+/* Global styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #494d4c;
+}
+
+/* ClothsApp component styles */
+.cloths-app {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.app-title {
+  font-size: 48px;
+  margin-bottom: 30px;
+  color: #ece1e1;
+  text-transform: uppercase;
+  background-color: #333;
+}
+
+.loading-message,
+.error-message {
+  font-size: 24px;
+  color: #d9534f;
+  margin-top: 20px;
+}
+
+/* Product list styles */
+.product-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  background-image: -webkit-linear-gradient(rgb(218, 230, 228),rgb(127, 141, 135));
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.product-details {
+  margin-top: 20px;
+}
+
+.product-title {
+  font-size: 24px;
+  margin: 10px 0;
+  color: #333;
+}
+
+.product-price {
+  font-size: 22px;
+  margin: 5px 0;
+  color: #007bff;
+}
+
+.product-category {
+  font-size: 20px;
+  margin: 5px 0;
+  color: #666;
+}
+
+.product-description {
+  font-size: 18px;
+  margin: 15px 0;
+  color: #444;
+}
+
+/* Button styles */
+.view-details-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.8s;
+}
+
+.view-details-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
